@@ -1,7 +1,25 @@
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-user
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: govtech-client
+spec:
+  memberOf: [govtech-clients]
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-group
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: govtech-clients
+spec:
+  type: team
+  children: []
+---
 apiVersion: backstage.io/v1alpha1
 kind: Domain
 metadata:
   name: govtech
   description: Everything related to GovTech platform
 spec:
-  owner: user:guest
+  owner: group:govtech-clients
