@@ -16,7 +16,7 @@ spec:
   system: govtech
   providesApis: [govtech-sb-bmg-verify-phone-service-api]
   dependsOn: []
-  consumesApis: [govtech-sb-bmg-verify-phone-service-api]
+  consumesApis: []
 ---
 apiVersion: backstage.io/v1alpha1
 kind: API

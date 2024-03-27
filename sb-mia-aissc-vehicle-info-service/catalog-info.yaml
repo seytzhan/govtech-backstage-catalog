@@ -8,8 +8,9 @@ metadata:
     backstage.io/managed-by-location: url:https://github.com/seytzhan/govtech-backstage-catalog/blob/develop/sb-mia-aissc-vehicle-info-service/catalog-info.yaml
     backstage.io/techdocs-ref: dir:.
 spec:
-  type: website
+  type: service
   lifecycle: experimental
+  partOf: "domain:govtech"
   owner: govtech-clients
   system: govtech
   providesApis: [govtech-sb-mia-aissc-vehicle-info-service-api]

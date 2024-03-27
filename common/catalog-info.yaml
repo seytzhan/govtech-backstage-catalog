@@ -30,3 +30,4 @@ metadata:
   name: govtech
 spec:
   owner: govtech-clients
+  domain: govtech
