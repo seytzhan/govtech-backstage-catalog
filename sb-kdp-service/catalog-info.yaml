@@ -1,0 +1,32 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: govtech
+spec:
+  owner: guests
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: govtech-sb-kdp-service
+  annotations:
+    backstage.io/source-location: url:https://gitlab.bcc.kz/govtech-platform/sb-kdp-service
+spec:
+  type: website
+  lifecycle: experimental
+  owner: guests
+  system: govtech
+  providesApis: [govtech-sb-kdp-service-api]
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: govtech-sb-kdp-service-api
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: guests
+  system: govtech
+  definition:
+    $text: https://dbp-test.bcc.kz/api/v1/gov/person-data-access/v3/api-docs
