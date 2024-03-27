@@ -7,6 +7,7 @@ metadata:
     backstage.io/source-location: url:https://gitlab.bcc.kz/govtech-platform/sb-fl-service
     backstage.io/managed-by-location: url:https://github.com/seytzhan/govtech-backstage-catalog/blob/develop/sb-fl-service/catalog-info.yaml
     backstage.io/techdocs-ref: dir:.
+    gitlab.com/project-id: '1639' #1234. This must be in quotes and can be found under Settings --> General
 spec:
   type: website
   lifecycle: experimental
