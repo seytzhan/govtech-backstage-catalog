@@ -1,0 +1,27 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: govtech-sb-fl-service
+  annotations:
+    backstage.io/source-location: url:https://gitlab.bcc.kz/govtech-platform/sb-fl-service
+    backstage.io/managed-by-location: url:https://github.com/seytzhan/govtech-backstage-catalog/blob/develop/sb-fl-service/catalog-info.yaml
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: website
+  lifecycle: experimental
+  owner: govtech-clients
+  system: govtech
+  providesApis: [govtech-sb-fl-service-api]
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: govtech-sb-fl-service-api
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: govtech-clients
+  system: govtech
+  definition:
+    $text: https://dbp-test.bcc.kz/api/v1/gov/persons/v3/api-docs

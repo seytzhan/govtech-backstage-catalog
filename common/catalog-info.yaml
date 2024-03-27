@@ -23,3 +23,10 @@ metadata:
   description: Everything related to GovTech platform
 spec:
   owner: group:govtech-clients
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: govtech
+spec:
+  owner: govtech-clients
