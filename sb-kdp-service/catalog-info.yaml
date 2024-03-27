@@ -11,7 +11,7 @@ kind: Component
 metadata:
   name: govtech-sb-kdp-service
   annotations:
-    backstage.io/source-location: url:https://gitlab.bcc.kz/govtech-platform/sb-kdp-service
+    backstage.io/source-location: url:https://github.com/seytzhan/govtech-backstage-catalog/blob/develop/sb-kdp-service
     backstage.io/managed-by-location: url:https://github.com/seytzhan/govtech-backstage-catalog/blob/develop/sb-kdp-service/catalog-info.yaml
 spec:
   type: website
