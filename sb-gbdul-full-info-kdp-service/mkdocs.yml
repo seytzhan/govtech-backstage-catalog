@@ -1,0 +1,7 @@
+site_name: 'govtech-sb-gbdul-full-info-kdp-service-docs'
+
+nav:
+  - Home: index.md
+
+plugins:
+  - techdocs-core
