@@ -9,11 +9,15 @@ metadata:
     backstage.io/techdocs-ref: dir:.
     gitlab.com/project-id: '1639' #1234. This must be in quotes and can be found under Settings --> General
 spec:
-  type: website
+  type: service
   lifecycle: experimental
+  partOf: "domain:govtech"
   owner: govtech-clients
   system: govtech
-  providesApis: [govtech-sb-fl-service-api]
+  providesApis:
+    - govtech-sb-fl-service-api
+  dependsOn: []
+  consumesApis: []
 ---
 apiVersion: backstage.io/v1alpha1
 kind: API
