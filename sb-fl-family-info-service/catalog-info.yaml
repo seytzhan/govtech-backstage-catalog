@@ -24,4 +24,4 @@ spec:
   owner: govtech-clients
   system: govtech
   definition:
-    $text: https://dbp-test.bcc.kz/api/v1/gov/persons-family/v3/api-docs
+    $text: https://dbp-dev.bcc.kz/api/v1/gov/persons-family/v3/api-docs
