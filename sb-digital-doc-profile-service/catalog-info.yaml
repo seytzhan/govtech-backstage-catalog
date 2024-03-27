@@ -1,0 +1,27 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: govtech-sb-digital-doc-profile-service
+  annotations:
+    backstage.io/source-location: url:https://gitlab.bcc.kz/govtech-platform/sb-digital-doc-profile-service
+    backstage.io/managed-by-location: url:https://github.com/seytzhan/govtech-backstage-catalog/blob/develop/sb-digital-doc-profile-service/catalog-info.yaml
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: website
+  lifecycle: experimental
+  owner: govtech-clients
+  system: govtech
+  providesApis: [govtech-sb-digital-doc-profile-service-api]
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: govtech-sb-digital-doc-profile-service-api
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: govtech-clients
+  system: govtech
+  definition:
+    $text: https://dbp-test.bcc.kz/api/v1/gov/digital-doc/profiles/v3/api-docs
