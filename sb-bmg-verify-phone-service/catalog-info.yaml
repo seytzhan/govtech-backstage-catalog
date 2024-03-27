@@ -1,0 +1,31 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: govtech-sb-bmg-verify-phone-service
+  annotations:
+    backstage.io/source-location: url:https://gitlab.bcc.kz/govtech-platform/sb-bmg-verify-phone-service
+    backstage.io/managed-by-location: url:https://github.com/seytzhan/govtech-backstage-catalog/blob/develop/sb-bmg-verify-phone-service/catalog-info.yaml
+    backstage.io/techdocs-ref: dir:.
+    gitlab.com/project-id: '1619' #1234. This must be in quotes and can be found under Settings --> General
+spec:
+  type: service
+  lifecycle: experimental
+  partOf: "domain:govtech"
+  owner: govtech-clients
+  system: govtech
+  providesApis: [govtech-sb-bmg-verify-phone-service-api]
+  dependsOn: []
+  consumesApis: [govtech-sb-bmg-verify-phone-service-api]
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: govtech-sb-bmg-verify-phone-service-api
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: govtech-clients
+  system: govtech
+  definition:
+    $text: https://dbp-test.bcc.kz/api/v1/gov/bmg/verify-phone/v3/api-docs
