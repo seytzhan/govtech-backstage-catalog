@@ -3,13 +3,18 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: govtech-sb-mia-aissc-vehicle-info-service
+  title: Сервис получения сведений в АИС "Сервисный центр" КАП МВД РК
+  description: Сервис предназначен для получения сведений в АИС "Сервисный центр" КАП МВД РК
   annotations:
     backstage.io/source-location: url:https://gitlab.bcc.kz/govtech-platform/sb-mia-aissc-vehicle-info-service
     backstage.io/managed-by-location: url:https://github.com/seytzhan/govtech-backstage-catalog/blob/develop/sb-mia-aissc-vehicle-info-service/catalog-info.yaml
     backstage.io/techdocs-ref: dir:.
+  tags:
+    - java
+    - spring
 spec:
   type: service
-  lifecycle: experimental
+  lifecycle: production
   partOf: "domain:govtech"
   owner: govtech-clients
   system: govtech
@@ -19,9 +24,10 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: govtech-sb-mia-aissc-vehicle-info-service-api
+  title: API Сервис получения сведений в АИС "Сервисный центр" КАП МВД РК
 spec:
   type: openapi
-  lifecycle: experimental
+  lifecycle: production
   owner: govtech-clients
   system: govtech
   definition:
