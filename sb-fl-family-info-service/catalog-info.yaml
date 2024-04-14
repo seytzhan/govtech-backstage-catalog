@@ -18,6 +18,7 @@ spec:
   owner: govtech-clients
   system: govtech
   providesApis: [govtech-sb-fl-family-info-service-api]
+  consumesApis: [govtech-sb-kdp-service-api]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: API
