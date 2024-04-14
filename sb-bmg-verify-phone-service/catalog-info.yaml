@@ -12,7 +12,7 @@ metadata:
     gitlab.com/project-id: '1619' #1234. This must be in quotes and can be found under Settings --> General
 spec:
   type: service
-  lifecycle: experimental
+  lifecycle: production
   partOf: "domain:govtech"
   owner: govtech-clients
   system: govtech
