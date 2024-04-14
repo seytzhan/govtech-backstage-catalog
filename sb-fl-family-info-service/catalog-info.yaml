@@ -3,10 +3,14 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: govtech-sb-fl-family-info-service
+  title: Сервис получения сведений о родственных связях ФЛ с использованием токена безопасности
   annotations:
     backstage.io/source-location: url:https://gitlab.bcc.kz/govtech-platform/sb-fl-family-info-service
     backstage.io/managed-by-location: url:https://github.com/seytzhan/govtech-backstage-catalog/blob/develop/sb-fl-family-info-service/catalog-info.yaml
     backstage.io/techdocs-ref: dir:.
+  tags:
+    - java
+    - spring
 spec:
   type: service
   lifecycle: experimental
@@ -19,6 +23,7 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: govtech-sb-fl-family-info-service-api
+  title: API Сервис получения сведений о родственных связях ФЛ с использованием токена безопасности
 spec:
   type: openapi
   lifecycle: experimental
