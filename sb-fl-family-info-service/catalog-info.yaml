@@ -4,6 +4,7 @@ kind: Component
 metadata:
   name: govtech-sb-fl-family-info-service
   title: Сервис получения сведений о родственных связях ФЛ с исп-ем токена безопасности
+  description: Сервис предназначен для поиска сведений о родственных связях физического лица с использованием токена безопасности.
   annotations:
     backstage.io/source-location: url:https://gitlab.bcc.kz/govtech-platform/sb-fl-family-info-service
     backstage.io/managed-by-location: url:https://github.com/seytzhan/govtech-backstage-catalog/blob/develop/sb-fl-family-info-service/catalog-info.yaml
