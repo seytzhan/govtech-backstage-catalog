@@ -6,7 +6,6 @@ metadata:
   title: Сервис проверки в БМГ зарегистрированного номера с соответствующим ИИН
   tags:
     - java
-    - springframework
   annotations:
     backstage.io/source-location: url:https://gitlab.bcc.kz/govtech-platform/sb-bmg-verify-phone-service
     backstage.io/managed-by-location: url:https://github.com/seytzhan/govtech-backstage-catalog/blob/develop/sb-bmg-verify-phone-service/catalog-info.yaml
