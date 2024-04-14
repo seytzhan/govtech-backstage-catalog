@@ -3,13 +3,18 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: govtech-sb-digital-doc-profile-service
+  title: Сервис удаленного доступа к цифровым документам
+  description: Сервис предназначен для предоставления удаленного доступа к цифровым документам посредством ввода короткого кода полученного через смс-сообщение в программных обеспечениях внешних систем. 1. Использование сервиса Цифровых документов регулируется Правилами отображения и использования электронных документов в сервисе цифровых документов, утверждённых приказом Министра цифрового развития, инноваций и аэрокосмической промышленности РК от 28 сентября 2020 года № 352/НҚ. 2. После получения согласия субъекта, цифровые документы используются исключительно с целью временного просмотра для получения государственных и иных услуг. 3. В случае использования сервиса не по назначению по решению владельца сервиса интеграционное взаимодействие отключается оператором
   annotations:
     backstage.io/source-location: url:https://gitlab.bcc.kz/govtech-platform/sb-digital-doc-profile-service
     backstage.io/managed-by-location: url:https://github.com/seytzhan/govtech-backstage-catalog/blob/develop/sb-digital-doc-profile-service/catalog-info.yaml
     backstage.io/techdocs-ref: dir:.
+  tags:
+    - java
+    - spring
 spec:
   type: service
-  lifecycle: experimental
+  lifecycle: production
   partOf: "domain:govtech"
   owner: govtech-clients
   system: govtech
@@ -19,9 +24,10 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: govtech-sb-digital-doc-profile-service-api
+  title: API Сервис удаленного доступа к цифровым документам
 spec:
   type: openapi
-  lifecycle: experimental
+  lifecycle: production
   owner: govtech-clients
   system: govtech
   definition:
