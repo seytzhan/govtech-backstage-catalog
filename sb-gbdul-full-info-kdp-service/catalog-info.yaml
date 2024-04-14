@@ -3,7 +3,8 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: govtech-sb-gbdul-full-info-kdp-service
-  title: Сервис получения сведений о родственных связях физического лица с использованием токена безопасности.
+  title: Сервис получения данных о юридическом лице
+  description: Сервис предназначен для предоставления полных регистрационных данных о юридическом лице (филиале, представительстве) по бизнес-идентификационному номеру (БИН) с КДП
   annotations:
     backstage.io/source-location: url:https://gitlab.bcc.kz/govtech-platform/sb-gbdul-full-info-kdp-service
     backstage.io/managed-by-location: url:https://github.com/seytzhan/govtech-backstage-catalog/blob/develop/sb-gbdul-full-info-kdp-service/catalog-info.yaml
@@ -18,12 +19,13 @@ spec:
   owner: govtech-clients
   system: govtech
   providesApis: [govtech-sb-gbdul-full-info-kdp-service-api]
+  consumesApis: [govtech-sb-kdp-service-api]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: govtech-sb-gbdul-full-info-kdp-service-api
-  title: API Сервиса получения сведений о родственных связях физического лица с использованием токена безопасности
+  title: API Сервис получения данных о юридическом лице
 spec:
   type: openapi
   lifecycle: production
