@@ -4,6 +4,7 @@ kind: Component
 metadata:
   name: govtech-sb-bmg-verify-phone-service
   title: Сервис проверки в БМГ зарегистрированного номера с соответствующим ИИН
+  tags: java, spring-framework
   annotations:
     backstage.io/source-location: url:https://gitlab.bcc.kz/govtech-platform/sb-bmg-verify-phone-service
     backstage.io/managed-by-location: url:https://github.com/seytzhan/govtech-backstage-catalog/blob/develop/sb-bmg-verify-phone-service/catalog-info.yaml
@@ -23,6 +24,7 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: govtech-sb-bmg-verify-phone-service-api
+  title: API Сервис проверки в БМГ зарегистрированного номера с соответствующим ИИН
 spec:
   type: openapi
   lifecycle: experimental
