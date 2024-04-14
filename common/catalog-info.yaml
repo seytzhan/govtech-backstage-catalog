@@ -28,6 +28,7 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: govtech
+  title: Платформа Govtech
 spec:
   owner: govtech-clients
   domain: govtech
