@@ -4,6 +4,7 @@ kind: Component
 metadata:
   name: govtech-sb-bmg-verify-phone-service
   title: Сервис проверки в БМГ зарегистрированного номера с соответствующим ИИН
+  description: Сервис проверки в БМГ зарегистрированного номера с соответствующим ИИН
   tags:
     - java
     - spring
