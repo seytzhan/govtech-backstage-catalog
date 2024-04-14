@@ -29,6 +29,14 @@ kind: System
 metadata:
   name: govtech
   title: Платформа Govtech
+  description: Назначение Платформы: - Обеспечить доступность большинства востребованных госуслуг в приложениях BCC.KZ, BCC Business и BCC Office. - Повысить эффективность внутренних процессов обслуживания клиентов за счет использования госсервисов
+  tags:
+    - java
+    - spring
+  links:
+    - url: https://kb.apps.bcc.kz/pages/viewpage.action?pageId=160137835
+      title: IAS-116413 Govtech Карточка информационной системы
+      icon: cloud
 spec:
   owner: govtech-clients
   domain: govtech
