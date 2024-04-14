@@ -5,7 +5,6 @@ metadata:
   name: govtech-sb-bmg-verify-phone-service
   title: Сервис проверки в БМГ зарегистрированного номера с соответствующим ИИН
   tags:
-    - backend
     - java
     - springframework
   annotations:
