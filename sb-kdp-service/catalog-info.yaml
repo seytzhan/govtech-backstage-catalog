@@ -20,6 +20,9 @@ metadata:
     - url: https://jira.bcc.kz/browse/GT-3242
       title: Jira Task
       icon: dashboard
+    - url: https://kb.apps.bcc.kz/pages/viewpage.action?pageId=150463686
+      title: Описание в Базе знаний
+      icon: dashboard
   tags:
     - java
     - spring
