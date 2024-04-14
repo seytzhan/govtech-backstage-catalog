@@ -16,6 +16,10 @@ metadata:
     backstage.io/source-location: url:https://gitlab.bcc.kz/govtech-platform/sb-kdp-service
     backstage.io/managed-by-location: url:https://github.com/seytzhan/govtech-backstage-catalog/blob/develop/sb-kdp-service/catalog-info.yaml
     backstage.io/techdocs-ref: dir:.
+  links:
+    - https://jira.bcc.kz/browse/GT-3242
+      title: Jira Task
+      icon: dashboard
   tags:
     - java
     - spring
